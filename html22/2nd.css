@@ -1,0 +1,33 @@
+a:hover {
+    text-decoration: underline;
+}
+<style>
+  #myHeader {
+  background-color: rgb(247, 240, 255);
+  color: rgb(10, 10, 10);
+  padding: 4px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}   
+.heading {
+    color: rgb(125, 79, 189);
+    font-weight: bold;
+    text-align: left;
+}
+
+.text-left {
+    text-align: left;
+    margin-left: px;
+    padding-left: px;
+}
+.flex-container img {
+    width: 140px;
+    height: 180px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.flex-container img:hover {
+    transform: scale(1.2); 
+}

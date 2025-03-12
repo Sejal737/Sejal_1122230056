@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD> 
+  <link rel="stylesheet" type="text/css" href="2nd.css">
+  
+<style>
+  #myHeader {
+  background-color: rgb(235, 223, 248);
+  color: rgb(10, 10, 10);
+  padding: 4px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}   
+h3::first-line {
+            font-style: italic;
+            color: rgb(128, 69, 196);
+        }
+
+  @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+  } 
+
+  
+  @media screen and (max-width: 768px) {
+      .flex-container img {
+          width: 100px;
+          height: 140px;
+      }
+      .fixed {
+          width: 100%;
+          position: relative;
+          text-align: center;
+      }
+  }
+
+  @media screen and (max-width: 1440px) {
+      .flex-container img {
+          width: 120px;
+          height: 160px;
+      }
+  }
+</style>
+<title>Flexbox Image Gallery</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .flex-container img {
+            width: 140px;
+            height: 180px;
+            border-radius: 20px;
+        }
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #ffffff;
+  margin: 30px;
+  gap: 30px;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  border: 1px solid #958f8f;
+  background-color: rgb(252, 252, 155);
+ padding: 4px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8d6cbc;
+}
+
+li {
+  float: left;
+  border-right:1px solid #ffffff;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #dec3fc;
+}
+
+.active {
+  background-color: #dec3fc;
+}
+</style>
+<nav>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Offers</a></li>
+  <li><a href="#contact">Categories</a></li>
+  <li style="float:right"><a href="#about">Account</a></li>
+</ul>
+</nav>
+<style>
+    h1 {color: rgb(1, 4, 14); text-align: center;}
+    button {
+      border:rgb(201, 174, 233);background-color: #8d6cbc;border-radius: 5px; padding: 8px 20px;
+      color: rgb(255, 255, 255);
+    }
+    button:hover {
+      background-color:#dec3fc;
+    }
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .size-quantity-container {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    select, input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .size-chart {
+      width: 80%;
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+</style>
+</HEAD>
+<body>
+  <h1 id="myHeader">getyourhood✨</h1>
+  <div class="product-container">
+    <img src="Money Mindset Media.jpeg" width="500">
+    <h2>Loose Fit Hoodie (White)</h2>
+   
+    <div class="size-quantity-container">
+      <label>Size:
+        <select>
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+      </label>
+      <label>Quantity:
+        <input type="number" min="1" max="10" value="1">
+      </label>
+    </div>
+    <button type="submit">Add to cart</button>
+    <h3 class="heading">Product Details</h3>
+    <p class="text-left"> White loose fit printed hoodie, has 1 kangaroo pocket, long sleeves, ribbed hem </p>
+    
+    <h3 class="heading">Size & Fit</h3>
+    <p class="text-left"> 
+    The model (height 6') is wearing a size 40</p>
+    
+    <h3 class="heading">Material & Care</h3>
+    <p class="text-left">Material: Cotton <br>
+    Machine Wash</p>
+
+     
+    <div class="size-chart">
+      <b>Size Chart</b>
+      <table>
+        <tr>
+          <th>Size</th>
+          <th>Brand Size</th>
+          <th>Length</th>
+        </tr>
+        <tr><td>XS</td><td>XS</td><td>30</td></tr>
+        <tr><td>S</td><td>S</td><td>32</td></tr>
+        <tr><td>M</td><td>M</td><td>34</td></tr>
+        <tr><td>L</td><td>L</td><td>36</td></tr>
+      </table>
+    </div>
+  
+
+  <h3 style="text-align: center;">Products you may like</h3>
+  <div class="flex-container">
+    <a href="pinkhoodie.html"><img src="carolina lancaster _ i’ll always be with you.jpeg" alt="Pink Loose Fit Hoodie"></a>
+    <a href="black.html"><img src="Embroidered Shirt, Y2K T-shirt, Aesthetic Clothing, Aesthetic Shirt, Tumblr Clothing, Tumblr Shirt, Art, Aesthetic Shirt, Aesthetic Clothing, Tumblr Shirt, Grunge Clothing, Grunge Shirt, Van Gogh, Art Shirt, T-shirt Dress Outfit Tumblr, Tu.jpeg"></a>
+    <a href="brown.html"><img src="/Users/sejalpatel/Desktop/html22/Lets Keep the Dumbfuckery to A Minimum Trendy Hoodies - Etsy.jpeg" alt="Brown Loose Fit Hoodie"></a>
+   </div>
+    <ul>
+        <li><a href="pinkhoodie.html"> Pink Loose Fit Hoodie </a></li>
+        <li><a href="black.html">Black Loose Fit Hoodie </a></li>
+        <li><a href="brown.html"> Brown Loose Fit Hoodie </a> </li>
+    </ul>
+  
+  <article>
+    <h2  style="color:rgb(79, 14, 116);">Join us on Instagram </h2>
+ </article>
+ 
+  <div class="fixed">GET GIFT CARD AT JUST Rs.99</div>
+</body>
+</HTML>
